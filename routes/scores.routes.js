@@ -5,7 +5,7 @@ const scores = express.Router();
 const pool = require("./connection");
 
 scores.get("/scores", function(req, res){
-    pool.query("select * from scores order by score desc").then(function(result){
+    pool.query("select * from scores order by score desc limit 10").then(function(result){
         res.send(result.rows);
     });
 });

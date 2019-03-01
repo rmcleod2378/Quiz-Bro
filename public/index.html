@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="App">
+<html lang="en" ng-app="quizmodule">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +8,22 @@
 </head>
 <body>
 
-    <quiz></quiz>
+    <!-- <quiz></quiz>
+    <scores></scores> -->
+
+    <a href="#!/questionlist">Question List</a>
+    <a href="#!/scores">Scores</a>
+    <ng-view></ng-view>
+
 
 
 <script src="https://code.angularjs.org/1.6.5/angular.js"></script>
 <script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
-<script src="app/app.module.js"></script>
-<script src="app/app.component.js"></script>
-<script src="app/app.service.js"></script>
+<script src="app/quiz.module.js"></script>
+<script src="app/quiz.component.js"></script>
+<script src="app/scores.component.js"></script>
+<script src="app/quiz.service.js"></script>
+<script src="app/quiz.config.js"></script>
 
     
 </body>

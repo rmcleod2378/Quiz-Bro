@@ -1,7 +1,7 @@
 "use strict";
 
 const quiz = {
-    templateUrl: "app/app.html",
+    templateUrl: "app/quiz.html",
     controller: ["quizService", function(quizService){
         const vm = this;
         vm.grade = 0;
@@ -18,9 +18,9 @@ const quiz = {
             console.log(response.data);
         });
 
-        quizService.getScore().then(response => {
-            vm.scores = response.data;
-        });
+        // quizService.getScores().then(response => {
+        //     vm.scores = response.data;
+        // });
 
         vm.selectAnswer = function(selected, answer, index) {
             if (selected == answer){
@@ -36,7 +36,7 @@ const quiz = {
                     vm.grade++
                 }
             }
-            quizService.gradeQuiz(newName, vm.grade).then(response => {
+            quizService.addScore(newName, vm.grade).then(response => {
                 vm.scores = response.data;
             });
             console.log(vm.grade);
@@ -45,5 +45,5 @@ const quiz = {
 };
 
 angular
-.module("App")
+.module("quizmodule")
 .component("quiz", quiz);

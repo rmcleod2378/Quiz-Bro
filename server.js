@@ -1,8 +1,8 @@
 "use strict";
 const express = require("express");
 const app = express();
-const questionlist = require("./routes/questionlist");
-const scores = require("./routes/scores");
+const questionlist = require("./routes/questions.routes");
+const scores = require("./routes/scores.routes");
 
 
 app.use(express.static("./public"));

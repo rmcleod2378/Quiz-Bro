@@ -1,6 +1,6 @@
 "use strict";
 
-function quizService($http) {
+function quizService($http, $location) {
     const self = this;
 self.getQuestions = function(){
     return $http({
@@ -8,14 +8,15 @@ self.getQuestions = function(){
         url: "/questionlist"
     });
   };
-  self.getScore = function(){
+  self.getScores = function(){//get scores
       return $http({
           method: "GET",
           url: "/scores"
       });
    };
 
-   self.gradeQuiz = function(newName, grade){
+   self.addScore = function(newName, grade){//addScore
+    $location.path("/scores");
        return $http({
            method: "POST",
            url: "/scores",
@@ -25,5 +26,5 @@ self.getQuestions = function(){
 }
 
 angular
-.module("App")
+.module("quizmodule")
 .service("quizService", quizService);

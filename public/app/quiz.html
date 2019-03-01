@@ -1,0 +1,17 @@
+<section ng-repeat="question in $ctrl.questionlist track by $index">
+    <p>{{ question.questions }}</p>
+    <input type="radio" name="{{question.id}}" ng-click="$ctrl.selectAnswer(question.choice_one, question.answer, $index);"> {{ question.choice_one }}<br>
+    <input type="radio" name="{{question.id}}" ng-click="$ctrl.selectAnswer(question.choice_two, question.answer, $index);"> {{ question.choice_two }}<br>
+    <input type="radio" name="{{question.id}}" ng-click="$ctrl.selectAnswer(question.choice_three, question.answer, $index);"> {{ question.choice_three }}<br>
+    <input type="radio" name="{{question.id}}" ng-click="$ctrl.selectAnswer(question.choice_four, question.answer, $index);"> {{ question.choice_four }}<br>
+</section>
+
+<form>
+    <input type="text" placeholder="Enter Name Here" ng-model="newName">
+    <button ng-click="$ctrl.gradeQuiz(newName);">Finish</button>
+</form>
+
+<!-- <section ng-repeat="score in $ctrl.scores track by $index">
+    <p>{{ score.player_name }}</p>
+    <p>{{ score.score }}</p>
+</section> -->
