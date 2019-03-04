@@ -1,4 +1,4 @@
-"use strict";
+"use strict"; //creating a component called scores
 const scores = {
     templateUrl: "app/scores.html",
     controller: ["quizService", function(quizService){

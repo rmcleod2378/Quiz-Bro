@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: lightgray;
+    color: black;
+    
+}
+
+body {
+    background-image: url("/assests/rhino-4004201_1280.png");
+    background-repeat: no-repeat;
+    margin: 50px;
+    background-position: right top;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    padding: 25px;
+}
+a:hover {
+    color: white;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+p {
+    font-size: 22px;
+}
+.scores {
+    display: inline;
+}
+form {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+input {
+    border-radius: 5px;
+}

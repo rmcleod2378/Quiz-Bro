@@ -1,5 +1,4 @@
 "use strict";
-
 const pg = require("pg");
 const credentials = new pg.Pool({
     user: "postgres",

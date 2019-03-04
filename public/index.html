@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz Bro</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
+<h1>Do you even quiz, BRO?</h1>
 <body>
 
-    <!-- <quiz></quiz>
-    <scores></scores> -->
+    <!-- allowing the player to navigate between score and quiz routes-->
+    <div id="nav">
+    <a href="#!/questionlist">Test your knowledge</a>
+    <a href="#!/scores">See score board leaders</a>
+    </div>
 
-    <a href="#!/questionlist">Question List</a>
-    <a href="#!/scores">Scores</a>
     <ng-view></ng-view>
-
-
-
+  
 <script src="https://code.angularjs.org/1.6.5/angular.js"></script>
 <script src="https://code.angularjs.org/1.6.5/angular-route.js"></script>
 <script src="app/quiz.module.js"></script>
