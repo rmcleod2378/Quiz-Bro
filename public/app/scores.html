@@ -1,3 +1,5 @@
-<section class="scores" ng-repeat="score in $ctrl.scores track by $index">
-    <p>{{ score.player_name }}  {{ score.score }} points</p>
-</section>
+<div class="scores">
+    <section ng-repeat="score in $ctrl.scores track by $index">
+        <p>{{ score.player_name }}  {{ score.score }} points</p>
+    </section>
+</div>

@@ -43,9 +43,7 @@ button {
 p {
     font-size: 22px;
 }
-.scores {
-    display: inline;
-}
+
 form {
     padding: 15px;
     border-radius: 5px;
@@ -54,3 +52,7 @@ form {
 input {
     border-radius: 5px;
 }
+
+.scores {
+    height: 700px;
+} 
